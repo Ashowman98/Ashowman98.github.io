@@ -1,37 +1,37 @@
 ﻿const publications = [
   {
     title: "Multi-granularity decision information integration network for hierarchical classification via local and global constraints",
-    authors: "Haoyang Liu, Peipei Li, Xuegang Hu, et al.",
+    authors: "Haoyang Liu, Peipei Li, Xuegang Hu",
     year: 2025,
-    url: "https://scholar.google.com/scholar?q=Multi-granularity+decision+information+integration+network+for+hierarchical+classification+via+local+and+global+constraints",
+    url: "https://link.springer.com/article/10.1007/s10489-025-06611-1",
     venue: "Applied Intelligence, 55(10): 756 (CCF-C类期刊)"
   },
   {
     title: "Class-specific semantic generation and reconstruction learning for open set recognition",
-    authors: "Haoyang Liu, Yaojin Lin, Peipei Li, et al.",
+    authors: "Haoyang Liu, Yaojin Lin, Peipei Li",
     year: 2024,
-    url: "https://scholar.google.com/scholar?q=Class-specific+semantic+generation+and+reconstruction+learning+for+open+set+recognition",
+    url: "https://www.ijcai.org/proceedings/2024/226",
     venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A类会议)"
   },
   {
     title: "Semantic-gap-oriented feature selection in hierarchical classification learning",
-    authors: "Haoyang Liu, Yaojin Lin, Chenxi Wang, et al.",
+    authors: "Haoyang Liu, Yaojin Lin, Chenxi Wang",
     year: 2023,
-    url: "https://scholar.google.com/scholar?q=Semantic-gap-oriented+feature+selection+in+hierarchical+classification+learning",
+    url: "https://www.sciencedirect.com/science/article/pii/S0020025523008265",
     venue: "Information Sciences, 642: 119241 (CCF-B类期刊)"
   },
   {
     title: "Hierarchical Feature Selection Based on Label Distribution Learning",
-    authors: "Yaojin Lin, Haoyang Liu, Hong Zhao, et al.",
+    authors: "Yaojin Lin, Haoyang Liu, Hong Zhao",
     year: 2023,
-    url: "https://scholar.google.com/scholar?q=Hierarchical+Feature+Selection+Based+on+Label+Distribution+Learning",
+    url: "https://ieeexplore.ieee.org/document/9780159/",
     venue: "IEEE Transactions on Knowledge and Data Engineering, 35(6): 5964-5976 (CCF-A类期刊)"
   },
   {
     title: "由粗到细的分层特征选择",
-    authors: "刘浩阳, 林耀进, 刘景华, 等",
+    authors: "刘浩阳, 林耀进, 刘景华",
     year: 2022,
-    url: "https://scholar.google.com/scholar?q=%E7%94%B1%E7%B2%97%E5%88%B0%E7%BB%86%E7%9A%84%E5%88%86%E5%B1%82%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9",
+    url: "https://ejournal.org.cn/thesisDetails#10.12263/DZXB.20211263&lang=zh",
     venue: "电子学报, 2022, 50(11): 2778-2789 (CCF-A类中文期刊)"
   }
 ];
