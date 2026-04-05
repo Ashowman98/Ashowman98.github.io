@@ -1,24 +1,38 @@
 ﻿const publications = [
   {
-    title: "Interpretable Human-AI Collaboration in Creative Tasks",
-    authors: "Haoyang Liu, A. Smith, B. Lee",
+    title: "Multi-granularity decision information integration network for hierarchical classification via local and global constraints",
+    authors: "Haoyang Liu, Peipei Li, Xuegang Hu, et al.",
     year: 2025,
-    url: "https://example.com/paper-1",
-    venue: "CHI 2025"
+    url: "https://scholar.google.com/scholar?q=Multi-granularity+decision+information+integration+network+for+hierarchical+classification+via+local+and+global+constraints",
+    venue: "Applied Intelligence, 55(10): 756 (CCF-C类期刊)"
   },
   {
-    title: "Designing Trust Signals for Everyday AI Assistants",
-    authors: "Haoyang Liu, C. Wang",
+    title: "Class-specific semantic generation and reconstruction learning for open set recognition",
+    authors: "Haoyang Liu, Yaojin Lin, Peipei Li, et al.",
     year: 2024,
-    url: "https://example.com/paper-2",
-    venue: "UIST 2024"
+    url: "https://scholar.google.com/scholar?q=Class-specific+semantic+generation+and+reconstruction+learning+for+open+set+recognition",
+    venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A类会议)"
   },
   {
-    title: "A Study of Multimodal Feedback in Learning Interfaces",
-    authors: "Haoyang Liu, D. Zhou, E. Martin",
+    title: "Semantic-gap-oriented feature selection in hierarchical classification learning",
+    authors: "Haoyang Liu, Yaojin Lin, Chenxi Wang, et al.",
     year: 2023,
-    url: "https://example.com/paper-3",
-    venue: "CSCW 2023"
+    url: "https://scholar.google.com/scholar?q=Semantic-gap-oriented+feature+selection+in+hierarchical+classification+learning",
+    venue: "Information Sciences, 642: 119241 (CCF-B类期刊)"
+  },
+  {
+    title: "Hierarchical Feature Selection Based on Label Distribution Learning",
+    authors: "Yaojin Lin, Haoyang Liu, Hong Zhao, et al.",
+    year: 2023,
+    url: "https://scholar.google.com/scholar?q=Hierarchical+Feature+Selection+Based+on+Label+Distribution+Learning",
+    venue: "IEEE Transactions on Knowledge and Data Engineering, 35(6): 5964-5976 (CCF-A类期刊)"
+  },
+  {
+    title: "由粗到细的分层特征选择",
+    authors: "刘浩阳, 林耀进, 刘景华, 等",
+    year: 2022,
+    url: "https://scholar.google.com/scholar?q=%E7%94%B1%E7%B2%97%E5%88%B0%E7%BB%86%E7%9A%84%E5%88%86%E5%B1%82%E7%89%B9%E5%BE%81%E9%80%89%E6%8B%A9",
+    venue: "电子学报, 2022, 50(11): 2778-2789 (CCF-A类中文期刊)"
   }
 ];
 
