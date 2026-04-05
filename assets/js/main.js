@@ -8,7 +8,7 @@
   },
   {
     title: "Class-specific semantic generation and reconstruction learning for open set recognition",
-    authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li",
+    authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li, Jun Hu, Xuegang Hu",
     year: 2024,
     url: "https://www.ijcai.org/proceedings/2024/226",
     venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A类会议)"
