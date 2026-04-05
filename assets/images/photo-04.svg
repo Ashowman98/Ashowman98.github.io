@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" role="img" aria-label="Team photo after workshop">
+  <defs>
+    <linearGradient id="g4" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#2b5a6d"/>
+      <stop offset="100%" stop-color="#7fb8c7"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#g4)"/>
+  <rect x="140" y="120" width="920" height="620" rx="30" fill="#f2f8fb"/>
+  <circle cx="320" cy="410" r="85" fill="#2f5266"/>
+  <circle cx="500" cy="410" r="85" fill="#3e687f"/>
+  <circle cx="680" cy="410" r="85" fill="#4f7f97"/>
+  <circle cx="860" cy="410" r="85" fill="#5f91ab"/>
+  <rect x="260" y="520" width="660" height="110" rx="20" fill="#cfdfe8"/>
+  <text x="600" y="840" fill="#ffffff" font-size="46" text-anchor="middle" font-family="Segoe UI, Arial, sans-serif">Workshop Team</text>
+</svg>
