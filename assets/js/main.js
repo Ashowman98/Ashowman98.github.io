@@ -1,21 +1,21 @@
-const publications = [
+﻿const publications = [
   {
     title: "Interpretable Human-AI Collaboration in Creative Tasks",
-    authors: "Your Name, A. Smith, B. Lee",
+    authors: "Haoyang Liu, A. Smith, B. Lee",
     year: 2025,
     url: "https://example.com/paper-1",
     venue: "CHI 2025"
   },
   {
     title: "Designing Trust Signals for Everyday AI Assistants",
-    authors: "Your Name, C. Wang",
+    authors: "Haoyang Liu, C. Wang",
     year: 2024,
     url: "https://example.com/paper-2",
     venue: "UIST 2024"
   },
   {
     title: "A Study of Multimodal Feedback in Learning Interfaces",
-    authors: "Your Name, D. Zhou, E. Martin",
+    authors: "Haoyang Liu, D. Zhou, E. Martin",
     year: 2023,
     url: "https://example.com/paper-3",
     venue: "CSCW 2023"
@@ -23,26 +23,10 @@ const publications = [
 ];
 
 const photos = [
-  {
-    src: "assets/images/photo-01.svg",
-    alt: "Conference hall with presentation screen",
-    caption: "Conference Talk"
-  },
-  {
-    src: "assets/images/photo-02.svg",
-    alt: "A notebook and coffee on a desk",
-    caption: "Research Notes"
-  },
-  {
-    src: "assets/images/photo-03.svg",
-    alt: "Campus path under trees",
-    caption: "Campus Walk"
-  },
-  {
-    src: "assets/images/photo-04.svg",
-    alt: "Team photo after workshop",
-    caption: "Workshop Team"
-  }
+  { src: "assets/images/photo-01.svg", alt: "Conference hall with presentation screen", caption: "Conference Talk" },
+  { src: "assets/images/photo-02.svg", alt: "A notebook and coffee on a desk", caption: "Research Notes" },
+  { src: "assets/images/photo-03.svg", alt: "Campus path under trees", caption: "Campus Walk" },
+  { src: "assets/images/photo-04.svg", alt: "Team photo after workshop", caption: "Workshop Team" }
 ];
 
 const i18n = {
@@ -114,13 +98,11 @@ function renderPublications() {
 
 function renderGallery() {
   galleryGrid.innerHTML = photos
-    .map((photo, index) => {
-      return `
-        <button class="gallery-item" type="button" data-index="${index}" aria-label="${photo.alt}">
-          <img src="${photo.src}" alt="${photo.alt}" loading="lazy">
-        </button>
-      `;
-    })
+    .map((photo, index) => `
+      <button class="gallery-item" type="button" data-index="${index}" aria-label="${photo.alt}">
+        <img src="${photo.src}" alt="${photo.alt}" loading="lazy">
+      </button>
+    `)
     .join("");
 }
 
@@ -130,9 +112,7 @@ function applyLanguage() {
 
   document.querySelectorAll("[data-i18n]").forEach((node) => {
     const key = node.dataset.i18n;
-    if (dictionary[key]) {
-      node.textContent = dictionary[key];
-    }
+    if (dictionary[key]) node.textContent = dictionary[key];
   });
 
   langToggle.textContent = currentLang === "zh" ? "EN" : "中";
@@ -167,12 +147,8 @@ langToggle.addEventListener("click", () => {
 
 galleryGrid.addEventListener("click", (event) => {
   const trigger = event.target.closest(".gallery-item");
-  if (!trigger) {
-    return;
-  }
-
-  const index = Number(trigger.dataset.index);
-  openLightbox(index);
+  if (!trigger) return;
+  openLightbox(Number(trigger.dataset.index));
 });
 
 lightboxClose.addEventListener("click", closeLightbox);
@@ -180,24 +156,16 @@ lightboxPrev.addEventListener("click", () => moveLightbox(-1));
 lightboxNext.addEventListener("click", () => moveLightbox(1));
 
 lightbox.addEventListener("click", (event) => {
-  if (event.target === lightbox) {
-    closeLightbox();
-  }
+  if (event.target === lightbox) closeLightbox();
 });
 
 document.addEventListener("keydown", (event) => {
-  if (lightbox.hidden) {
-    return;
-  }
-
-  if (event.key === "Escape") {
-    closeLightbox();
-  } else if (event.key === "ArrowLeft") {
-    moveLightbox(-1);
-  } else if (event.key === "ArrowRight") {
-    moveLightbox(1);
-  }
+  if (lightbox.hidden) return;
+  if (event.key === "Escape") closeLightbox();
+  if (event.key === "ArrowLeft") moveLightbox(-1);
+  if (event.key === "ArrowRight") moveLightbox(1);
 });
 
 renderGallery();
 applyLanguage();
+closeLightbox();
