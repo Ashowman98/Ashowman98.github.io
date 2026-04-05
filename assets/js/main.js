@@ -37,10 +37,9 @@
 ];
 
 const photos = [
-  { src: "assets/images/photo-01.svg", alt: "Conference hall with presentation screen", caption: "Conference Talk" },
-  { src: "assets/images/photo-02.svg", alt: "A notebook and coffee on a desk", caption: "Research Notes" },
-  { src: "assets/images/photo-03.svg", alt: "Campus path under trees", caption: "Campus Walk" },
-  { src: "assets/images/photo-04.svg", alt: "Team photo after workshop", caption: "Workshop Team" }
+  { src: "assets/images/ijcai24_1.jpg", alt: "IJCAI 2024 conference venue", caption: "Conference Venue / 会场" },
+  { src: "assets/images/ijcai24_2.jpg", alt: "IJCAI 2024 presentation", caption: "Presentation / 汇报" },
+  { src: "assets/images/ijcai24_3.jpg", alt: "IJCAI 2024 banquet", caption: "Banquet / 晚宴" }
 ];
 
 const i18n = {
