@@ -1,6 +1,6 @@
 ﻿const publications = [
    {
-    title: "DSPL: Dual-Space Prompt Learning with Context Bias Decoupling for Open Set Recognition",
+    title: "DSPL: Dual-space prompt learning with context bias decoupling for open set recognition",
     authors: "<strong>Haoyang Liu</strong>, Xuegang Hu, Yaojin Lin, Peipei Li",
     year: 2026,
     venue: "IEEE Transactions on Knowledge and Data Engineering (CCF-A类期刊, accepted)"
