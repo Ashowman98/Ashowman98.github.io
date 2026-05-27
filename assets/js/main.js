@@ -3,13 +3,13 @@
     title: "DSPL: Dual-space prompt learning with context bias decoupling for open set recognition",
     authors: "<strong>Haoyang Liu</strong>, Xuegang Hu, Yaojin Lin, Peipei Li",
     year: 2026,
-    venue: "IEEE Transactions on Knowledge and Data Engineering (CCF-A类期刊, Accepted)"
+    venue: "IEEE Transactions on Knowledge and Data Engineering, 10.1109/TKDE.2026.3692613 (CCF-A类期刊)"
   },
   {
     title: "Dual-module collaborative learning for open-set recognition with noisy labels",
     authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li, Xuegang Hu",
     year: 2026,
-    venue: "Pattern Recognition (CCF-B类期刊, Accepted)"
+    venue: "Pattern Recognition, 180: 113965 (CCF-B类期刊)"
   },
   {
     title: "Multi-granularity decision information integration network for hierarchical classification via local and global constraints",
