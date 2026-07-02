@@ -4,7 +4,7 @@
     authors: "<strong>Haoyang Liu</strong>, Xuegang Hu, Yaojin Lin, Peipei Li",
     year: 2026,
     url: "https://ieeexplore.ieee.org/document/11516266",
-    venue: "IEEE Transactions on Knowledge and Data Engineering, 10.1109/TKDE.2026.3692613 (CCF-A类期刊)"
+    venue: "IEEE Transactions on Knowledge and Data Engineering, 38(8): 5041-5054 (CCF-A类期刊)"
   },
   {
     title: "Dual-module collaborative learning for open-set recognition with noisy labels",
