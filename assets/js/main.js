@@ -25,7 +25,7 @@
     authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li, Jun Hu, Xuegang Hu",
     year: 2024,
     url: "https://www.ijcai.org/proceedings/2024/226",
-    venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A)"
+    venue: "Proceedings of IJCAI'24: 2045-2053 (CCF-A)"
   },
   {
     title: "Semantic-gap-oriented feature selection in hierarchical classification learning",
@@ -46,7 +46,7 @@
     authors: "<strong>刘浩阳</strong>, 林耀进, 刘景华, 吴镒潾, 毛煜, 李绍滋",
     year: 2022,
     url: "https://ejournal.org.cn/thesisDetails#10.12263/DZXB.20211263&lang=zh",
-    venue: "电子学报, 2022, 50(11): 2778-2789 (CCF-A)"
+    venue: "电子学报, 50(11): 2778-2789 (CCF-A)"
   }
 ];
 
