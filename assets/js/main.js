@@ -101,6 +101,20 @@ const lightboxCaption = document.getElementById("lightboxCaption");
 const lightboxClose = document.getElementById("lightboxClose");
 const lightboxPrev = document.getElementById("lightboxPrev");
 const lightboxNext = document.getElementById("lightboxNext");
+const navLinks = [...document.querySelectorAll(".nav-list a")];
+const revealNodes = [...document.querySelectorAll(".reveal")];
+
+function splitVenueAndBadge(venue) {
+  const match = venue.match(/^(.*)\s\((CCF-[A-Z])\)$/);
+  if (!match) {
+    return { venueText: venue, badge: "" };
+  }
+
+  return {
+    venueText: match[1],
+    badge: match[2]
+  };
+}
 
 function renderPublications() {
   const sortedPubs = [...publications].sort((a, b) => b.year - a.year);
@@ -108,13 +122,23 @@ function renderPublications() {
 
   publicationsList.innerHTML = sortedPubs
     .map((pub) => {
-      const venue = pub.venue ? ` · ${pub.venue}` : "";
+      const { venueText, badge } = splitVenueAndBadge(pub.venue || "");
+      const venueLine = venueText
+        ? `<div class="publication-venue-row">
+             <p class="publication-meta">${venueText}</p>
+             ${badge ? `<span class="publication-badge">${badge}</span>` : ""}
+           </div>`
+        : "";
+
       return `
         <article class="publication-card">
-          <h3 class="publication-title">${pub.title}</h3>
-          <p class="publication-meta">${pub.authors}</p>
-          <p class="publication-meta">${pub.year}${venue}</p>
-          <a class="publication-link" href="${pub.url}" target="_blank" rel="noreferrer">${viewText}</a>
+          <div class="publication-year">${pub.year}</div>
+          <div class="publication-body">
+            <h3 class="publication-title">${pub.title}</h3>
+            <p class="publication-meta">${pub.authors}</p>
+            ${venueLine}
+            <a class="publication-link" href="${pub.url}" target="_blank" rel="noreferrer">${viewText}</a>
+          </div>
         </article>
       `;
     })
@@ -165,6 +189,41 @@ function moveLightbox(step) {
   openLightbox(currentPhotoIndex);
 }
 
+function setActiveNavLink() {
+  const sections = [...document.querySelectorAll("main section[id]")];
+  let activeId = sections[0]?.id || "home";
+
+  sections.forEach((section) => {
+    const rect = section.getBoundingClientRect();
+    if (rect.top <= 140 && rect.bottom > 140) {
+      activeId = section.id;
+    }
+  });
+
+  navLinks.forEach((link) => {
+    const isActive = link.getAttribute("href") === `#${activeId}`;
+    link.classList.toggle("active", isActive);
+  });
+}
+
+function setupReveal() {
+  if (!("IntersectionObserver" in window)) {
+    revealNodes.forEach((node) => node.classList.add("is-visible"));
+    return;
+  }
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("is-visible");
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.18 });
+
+  revealNodes.forEach((node) => observer.observe(node));
+}
+
 langToggle.addEventListener("click", () => {
   currentLang = currentLang === "zh" ? "en" : "zh";
   applyLanguage();
@@ -194,3 +253,6 @@ document.addEventListener("keydown", (event) => {
 renderGallery();
 applyLanguage();
 closeLightbox();
+setupReveal();
+setActiveNavLink();
+document.addEventListener("scroll", setActiveNavLink, { passive: true });
