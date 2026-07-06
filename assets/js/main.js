@@ -4,49 +4,49 @@
     authors: "<strong>Haoyang Liu</strong>, Xuegang Hu, Yaojin Lin, Peipei Li",
     year: 2026,
     url: "https://ieeexplore.ieee.org/document/11516266",
-    venue: "IEEE Transactions on Knowledge and Data Engineering, 38(8): 5041-5054 (CCF-A类期刊)"
+    venue: "IEEE Transactions on Knowledge and Data Engineering, 38(8): 5041-5054 (CCF-A)"
   },
   {
     title: "Dual-module collaborative learning for open-set recognition with noisy labels",
     authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li, Xuegang Hu",
     year: 2026,
     url: "https://www.sciencedirect.com/science/article/abs/pii/S0031320326009301",
-    venue: "Pattern Recognition, 180: 113965 (CCF-B类期刊)"
+    venue: "Pattern Recognition, 180: 113965 (CCF-B)"
   },
   {
     title: "Multi-granularity decision information integration network for hierarchical classification via local and global constraints",
     authors: "<strong>Haoyang Liu</strong>, Peipei Li, Xuegang Hu, Shengxing Bai, Yaojin Lin",
     year: 2025,
     url: "https://link.springer.com/article/10.1007/s10489-025-06611-1",
-    venue: "Applied Intelligence, 55(10): 756 (CCF-C类期刊)"
+    venue: "Applied Intelligence, 55(10): 756 (CCF-C)"
   },
   {
     title: "Class-specific semantic generation and reconstruction learning for open set recognition",
     authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Peipei Li, Jun Hu, Xuegang Hu",
     year: 2024,
     url: "https://www.ijcai.org/proceedings/2024/226",
-    venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A类会议)"
+    venue: "Proceedings of IJCAI 2024: 2045-2053 (CCF-A)"
   },
   {
     title: "Semantic-gap-oriented feature selection in hierarchical classification learning",
     authors: "<strong>Haoyang Liu</strong>, Yaojin Lin, Chenxi Wang, Lei Guo, Jinkun Chen",
     year: 2023,
     url: "https://www.sciencedirect.com/science/article/pii/S0020025523008265",
-    venue: "Information Sciences, 642: 119241 (CCF-B类期刊)"
+    venue: "Information Sciences, 642: 119241 (CCF-B)"
   },
   {
     title: "Hierarchical Feature Selection Based on Label Distribution Learning",
     authors: "Yaojin Lin, <strong>Haoyang Liu</strong>, Hong Zhao, Qinghua Hu, Xingquan Zhu, Xindong Wu",
     year: 2023,
     url: "https://ieeexplore.ieee.org/document/9780159/",
-    venue: "IEEE Transactions on Knowledge and Data Engineering, 35(6): 5964-5976 (CCF-A类期刊)"
+    venue: "IEEE Transactions on Knowledge and Data Engineering, 35(6): 5964-5976 (CCF-A)"
   },
   {
     title: "由粗到细的分层特征选择",
     authors: "<strong>刘浩阳</strong>, 林耀进, 刘景华, 吴镒潾, 毛煜, 李绍滋",
     year: 2022,
     url: "https://ejournal.org.cn/thesisDetails#10.12263/DZXB.20211263&lang=zh",
-    venue: "电子学报, 2022, 50(11): 2778-2789 (CCF-A类中文期刊)"
+    venue: "电子学报, 2022, 50(11): 2778-2789 (CCF-A)"
   }
 ];
 
